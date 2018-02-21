@@ -1,14 +1,22 @@
-#Moya + HandyJSON + LazyProvider
+## Moya + HandyJSON + LazyProvider
 
 
-**What's LazyProvider?**
+### What's LazyProvider?
 
-* Request same url with same parameters multiple times, LazyProvider will use cache after the first.
-* Request same url with same parameters thouand times at the same time, it's ok, LazyProvider will manage this.
+* request same url with same parameters multiple times, LazyProvider will use cache after the first.
+* request same url with same parameters thousand of times at the same time, it's ok, LazyProvider will manage this.
 
-```GitHub.provider()``` is powerful than ```MoyaProvider<GitHub>()```
+```MoyaProvider<GitHub>()``` **Moya basic Provier**
 
-**Usage**
+```GitHub.provider()``` **Normal request, but cache response**
+
+```GitHub.lazyProvider()``` **Use cache response if exists, or request then cache response**
+
+## CocoaPods
+
+```pod 'MoyaPlusHandyJSON'```
+
+## Usage
 
 ```
 // HanyJOSN extension with RxSwift
