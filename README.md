@@ -12,14 +12,33 @@
 
 ```GitHub.lazyProvider()``` **Use cache response if exists, or request then cache response**
 
+## Swift version
+**4.0**
+
 ## CocoaPods
 
 ```pod 'MoyaPlusHandyJSON'```
 
 ## Usage
+<br>
+**Create a HandyJSON Model**
 
 ```
-// HanyJOSN extension with RxSwift
+import Foundation
+import HandyJSON
+
+class GitHubUserProfile: HandyJSON {
+    var name: String?
+    var id: Int = 0
+    var url: String?
+    
+    required init() {}
+}
+```
+<br>
+**HanyJOSN extension with RxSwift**
+
+```
  GitHub.provider().rx
             .request(.userProfile("winddpan"))
             .map(GitHubUserProfile.self)
@@ -29,9 +48,10 @@
                 print(error.localizedDescription)
             }.disposed(by: bag)
 ```
+<br>
+**HanyJOSN extension with MoyaResponse**
 
 ```        
-// HanyJOSN extension with MoyaResponse
 GitHub.provider()
     .request(.userProfile("winddpan")) { result in
         switch result {
