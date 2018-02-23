@@ -21,6 +21,7 @@
 
 ## Usage
 <br>
+
 **Create a HandyJSON Model**
 
 ```
@@ -36,6 +37,7 @@ class GitHubUserProfile: HandyJSON {
 }
 ```
 <br>
+
 **HanyJOSN extension with RxSwift**
 
 ```
@@ -49,6 +51,7 @@ class GitHubUserProfile: HandyJSON {
             }.disposed(by: bag)
 ```
 <br>
+
 **HanyJOSN extension with MoyaResponse**
 
 ```        
