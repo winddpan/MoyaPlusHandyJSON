@@ -6,9 +6,9 @@
 * request same url with same parameters multiple times, LazyProvider will use cache after the first.
 * request same url with same parameters thousand of times at the same time, it's ok, LazyProvider will manage this.
 
-```MoyaProvider<GitHub>()``` **Moya basic Provier**
+```MoyaProvider<GitHub>()``` **Moya basic request, without any cache**
 
-```GitHub.provider()``` **Normal request, but cache response**
+```GitHub.provider()``` **Normal request, and cache the response**
 
 ```GitHub.lazyProvider()``` **Use cached response if exists, or request and cache the response**
 
