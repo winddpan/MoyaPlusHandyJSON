@@ -10,10 +10,10 @@
 
 ```GitHub.provider()``` **Normal request, but cache response**
 
-```GitHub.lazyProvider()``` **Use cache response if exists, or request then cache response**
+```GitHub.lazyProvider()``` **Use cached response if exists, or request and cache the response**
 
 ## Swift version
-**4.0**
+**4.0+**
 
 ## CocoaPods
 
