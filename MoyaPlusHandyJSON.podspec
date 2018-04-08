@@ -23,6 +23,6 @@ Pod::Spec.new do |s|
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
   
   s.dependency "Moya/RxSwift", '~> 11.0'
-  s.dependency "HandyJSON", '~> 4.0.0-beta.1'
+  s.dependency "HandyJSON", '~> 4.1.0'
 
 end
